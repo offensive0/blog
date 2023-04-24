@@ -1,7 +1,7 @@
 #
 # This file contains configuration flags to customize your site
 #
-
+tag_page_dir: tag
 # Name of your site (displayed in the header)
 name: blog
 
