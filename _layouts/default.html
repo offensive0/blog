@@ -8,8 +8,14 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-<form action="/search" method="get">
-    <input type="text" name="q" placeholder="Search posts...">
+
+  {% if page.url == "/search.html" %}
+    {% assign query = request.query | cgi_escape %}
+    {% assign page.query = query | replace: "+", " " %}
+  {% endif %}
+
+  <form action="{{ site.baseurl }}/search" method="get">
+    <input type="text" name="query" placeholder="Search posts..." value="{{ page.query }}">
     <button type="submit">Search</button>
   </form>
    
