@@ -3,7 +3,6 @@ layout: default
 title: Tags
 published: true
 ---
-
-{% for tag in site.tags %}
-  <a href="/blog/tag/{{ tag[0] }}/">{{ tag[0] }}</a> ({{ tag[1] | size }})<br>
+{% for tag in page.tags %}
+  <a href="/blog/tag/{{ tag }}/">{{ tag }}</a>
 {% endfor %}
