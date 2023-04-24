@@ -8,11 +8,11 @@ published: true
 
   {% if page.tags %}
   <div class="post-tags">
-    <ul>
+    
       {% for tag in page.tags %}
-        <li><a href="../tag/{{ tag }}/">{{ tag }}</a></li>
+        <a href="../tag/">{{ tag }}</a>
       {% endfor %}
-    </ul>
+    
   </div>
 {% endif %}
   
