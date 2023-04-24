@@ -1,0 +1,4 @@
+{% assign tags = site.tags %}
+{% for tag in tags %}
+  <a href="/tags/{{ tag[0] }}/">{{ tag[0] }}</a> ({{ tag[1].size }})
+{% endfor %}
