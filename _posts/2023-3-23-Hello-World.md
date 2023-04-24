@@ -2,6 +2,7 @@
 layout: post
 title: hope this is working
 published: true
+tags: test
 ---
 
 it works !! :DD
