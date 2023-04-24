@@ -5,13 +5,6 @@ published: true
 
 <article class="post">
   <h1>{{ page.title }}</h1>
-
-  {% if page.tags %}
-  <div class="post-tags">
-    
-      {% for tag in page.tags %}
-        <a href="../tag/">{{ tag }}</a>
-      {% endfor %}
     
   </div>
 {% endif %}
